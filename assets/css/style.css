@@ -90,12 +90,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 85%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .container {
+    width: 75%;
+  }
+}
+
 header {
   background-color: green;
 }
 
 footer {
-  background-color: red;
+  min-height: 15rem;
+  background-color: #6a1313;
+  color: #fff;
+  padding: 2rem 0;
 }
 
 main {
