@@ -48,6 +48,15 @@ table {
   border-spacing: 0;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
 .responsive-img {
   width: 100%;
   max-width: 100%;
@@ -66,15 +75,6 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  position: relative;
-  font-weight: normal;
 }
 
 body {
@@ -114,6 +114,25 @@ header {
   background-color: rgba(0, 0, 0, 0.65);
   color: #fff;
   min-height: 4rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+}
+
+ul {
+  display: flex;
+}
+ul li a {
+  height: 4rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
 }
 
 footer {

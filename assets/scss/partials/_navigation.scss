@@ -1,0 +1,22 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+}
+
+ul {
+    display: flex;
+
+    li {
+
+        a {
+            height: 4rem;
+            padding: 0 1rem;
+            display: flex;
+            align-items: center;
+            color: $white;
+        }
+    }
+}
