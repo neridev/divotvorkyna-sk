@@ -1,22 +1,26 @@
 nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 4rem;
 }
 
 ul {
     display: flex;
+    flex-direction: row;
 
     li {
 
         a {
             height: 4rem;
-            padding: 0 1rem;
+            padding: 0 1.35rem;
             display: flex;
             align-items: center;
             color: $white;
+            background-color: $body-border;
+            transition: all .35s ease-in-out;
+            
+            &:hover,
+            &:focus {
+                background-color: $footer-bg;
+            }
         }
     }
 }

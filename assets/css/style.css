@@ -115,26 +115,31 @@ body {
 header {
   background-color: rgba(0, 0, 0, 0.65);
   color: #fff;
-  min-height: 4rem;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 nav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 4rem;
 }
 
 ul {
   display: flex;
+  flex-direction: row;
 }
 ul li a {
   height: 4rem;
-  padding: 0 1rem;
+  padding: 0 1.35rem;
   display: flex;
   align-items: center;
   color: #fff;
+  background-color: #360909;
+  transition: all 0.35s ease-in-out;
+}
+ul li a:hover, ul li a:focus {
+  background-color: #6a1313;
 }
 
 footer {

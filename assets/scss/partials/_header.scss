@@ -1,5 +1,8 @@
 header {
     background-color: $header-bg;
     color: $white;
-    min-height: 4rem;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
