@@ -88,6 +88,8 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  border-top: #360909 solid 2rem;
+  border-left: #360909 solid 2rem;
 }
 
 .container {
