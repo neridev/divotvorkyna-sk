@@ -138,6 +138,21 @@ header:after {
   background-color: #000;
 }
 
+.header__top, .header__middle, .header__bottom {
+  display: flex;
+}
+.header__middle {
+  justify-content: space-between;
+}
+.header__image {
+  width: 25%;
+}
+.header__image img {
+  position: relative;
+  border-radius: 50%;
+  z-index: 1;
+}
+
 nav {
   display: flex;
 }

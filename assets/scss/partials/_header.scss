@@ -25,3 +25,27 @@ header {
         background-color: $black;
     }
 }
+
+.header {
+    
+    &__top,
+    &__middle,
+    &__bottom {
+        display: flex;
+    }
+    
+    &__middle {
+        justify-content: space-between;
+    }
+    
+    &__image {
+        
+        width: 25%;
+        
+        img {
+            position: relative;
+            border-radius: 50%;
+            z-index: 1;
+        }
+    }
+}
