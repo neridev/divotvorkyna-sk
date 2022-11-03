@@ -1,18 +1,18 @@
 header {
-    color: $white;
-    min-height: 50vh;
+    color: $footer-bg;
+    height: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     
-    &:before {
+    /*&:before {
         content: '';
         display: block;
         position: absolute;
         left: 0;
         width: 50%;
         height: 50vh;
-        background-color: $header-bg;
+        background-color: $grey;
     }
     
     &:after {
@@ -22,8 +22,9 @@ header {
         right: 0;
         width: 50%;
         height: 50vh;
-        background-color: $black;
-    }
+        background-color: $footer-bg;
+        transform: skewX(340deg);
+    }*/
 }
 
 .header {
@@ -35,7 +36,12 @@ header {
     }
     
     &__middle {
-        justify-content: space-between;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    &__bottom {
+        z-index: 1;
     }
     
     &__image {
