@@ -1,7 +1,9 @@
 header {
-    background-color: $white;
-    color: $footer-bg;
-    height: 25rem;
+    background: rgb(106,19,19);
+    background: -webkit-linear-gradient(left, rgba(54,9,9,.9) 0%, rgba(106,19,19,1) 100%);
+    background: -o-linear-gradient(left, rgba(54,9,9,.9) 0%, rgba(106,19,19,1) 100%);
+    background: linear-gradient(to right, rgba(54,9,9,.9) 0%, rgba(106,19,19,1) 100%);
+    color: $white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -31,18 +33,19 @@ header {
 .header {
     
     &__top,
-    &__middle,
     &__bottom {
         display: flex;
     }
     
-    &__middle {
+    &__top {
+        margin-top: 2rem;
+        height: 20rem;
         align-items: center;
         justify-content: space-around;
     }
     
     &__bottom {
-        z-index: 1;
+        height: 4rem;
     }
     
     &__image {
@@ -51,7 +54,8 @@ header {
         
         img {
             position: relative;
-            border-radius: 50%;
+            max-width: 22rem;
+            border-radius: 50%;    
             z-index: 1;
         }
     }
