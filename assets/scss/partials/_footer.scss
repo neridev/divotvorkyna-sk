@@ -1,6 +1,9 @@
 footer {
     min-height: 15rem;
-    background-color: $footer-bg;
+    background: rgb(106,19,19);
+    background: -webkit-linear-gradient(bottom, rgba(54,9,9,1) 0%, rgba(106,19,19,1) 100%);
+    background: -o-linear-gradient(bottom, rgba(54,9,9,1) 0%, rgba(106,19,19,1) 100%);
+    background: linear-gradient(to top, rgba(54,9,9,1) 0%, rgba(106,19,19,1) 100%);
     color: $white;
     padding: 2rem 0;
 }
