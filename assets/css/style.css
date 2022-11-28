@@ -92,6 +92,22 @@ h1 {
   }
 }
 
+.svg-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #fff;
+}
+
+.svg-icon circle {
+  stroke: #fff;
+  stroke-width: 1;
+}
+
 body {
   min-height: 100vh;
   color: #000;
@@ -199,13 +215,33 @@ header {
 nav {
   display: flex;
 }
+nav button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #360909;
+  border: none;
+  border-left: 0.25rem solid #6a1313;
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
+}
+nav button:hover, nav button:focus {
+  background-color: #6a1313;
+}
+@media screen and (min-width: 610px) {
+  nav button {
+    display: none;
+  }
+}
 
 ul {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 @media screen and (min-width: 610px) {
   ul {
+    display: flex;
     flex-direction: row;
   }
 }
