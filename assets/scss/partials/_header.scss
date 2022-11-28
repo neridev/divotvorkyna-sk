@@ -58,9 +58,14 @@ header {
         img {
             position: relative;
             max-width: 22rem;
+            min-width: 8rem;
             border-radius: 50%;
             box-shadow: $black 0 0 20px 8px;
             z-index: 1;
+            
+            @media screen and (min-width: 1024px) {
+                min-width: 22rem;
+            }
         }
     }
 }

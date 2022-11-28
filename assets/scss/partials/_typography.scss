@@ -9,6 +9,14 @@ h6 {
 }
 
 h1 {
-    font-size: 5.5rem;
-    font-family: 'Great Vibes'
+    font-size: 2rem;
+    font-family: 'Great Vibes';
+    
+    @media screen and (min-width: 520px) {
+        font-size: 3.5rem;
+    }
+    
+    @media screen and (min-width: 1024px) {
+        font-size: 5.5rem;
+    }
 }

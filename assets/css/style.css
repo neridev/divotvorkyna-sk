@@ -78,8 +78,18 @@ h6 {
 }
 
 h1 {
-  font-size: 5.5rem;
+  font-size: 2rem;
   font-family: "Great Vibes";
+}
+@media screen and (min-width: 520px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 5.5rem;
+  }
 }
 
 body {
@@ -174,9 +184,15 @@ header {
 .header__image img {
   position: relative;
   max-width: 22rem;
+  min-width: 8rem;
   border-radius: 50%;
   box-shadow: #000 0 0 20px 8px;
   z-index: 1;
+}
+@media screen and (min-width: 1024px) {
+  .header__image img {
+    min-width: 22rem;
+  }
 }
 
 nav {
