@@ -174,6 +174,7 @@ header {
 }
 .header__bottom {
   height: 4rem;
+  z-index: 10;
 }
 .header__image {
   width: 25%;
@@ -201,7 +202,12 @@ nav {
 
 ul {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+@media screen and (min-width: 610px) {
+  ul {
+    flex-direction: row;
+  }
 }
 ul li a {
   height: 4rem;
@@ -209,6 +215,7 @@ ul li a {
   display: flex;
   align-items: center;
   color: #fff;
+  border-left: 0.25rem solid #6a1313;
   background-color: #360909;
   transition: all 0.35s ease-in-out;
 }
