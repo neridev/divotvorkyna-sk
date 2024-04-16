@@ -19,7 +19,7 @@
         </section>
         <section class="header__bottom">
             <nav role="navigation" aria-label="Hlavné menu">
-                <button>
+                <button class="nav__toggle" aria-expanded="false" aria-controls="nav__list">
                     <svg class="svg-icon" viewBox="0 0 20 20">
                         <path fill="none" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
 c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
@@ -28,21 +28,18 @@ c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.3
                     </svg>
                     Menu
                 </button>
-                <ul class="main-navigation">
-                    <li>
-                        <a href="#">Úvod</a>
+                <ul id="nav__list" class="main-navigation nav__list" hidden>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__list-link">Úvod</a>
                     </li>
-                    <li>
-                        <a href="#">Životopis</a>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__list-link">Životopis</a>
                     </li>
-                    <li>
-                        <a href="#">Modlitby</a>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__list-link">Modlitby</a>
                     </li>
-                    <li>
-                        <a href="#">Zázraky</a>
-                    </li>
-                    <li>
-                        <a href="#">Poďakovania</a>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__list-link">Zázraky</a>
                     </li>
                 </ul>
             </nav>
@@ -64,7 +61,7 @@ c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.3
 			</div>
         </section>
         <section class="wide">
-             <img src="assets/images/philomena-wide.jpeg" alt="filomena" class="responsive-img" >
+             <img src="assets/images/philomena-wide.jpeg" alt="filomena" class="responsive-img parallaxThumbnail" >
         </section>
         <section class="container">
 			<div class="text">
@@ -82,6 +79,7 @@ c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.3
             footer
         </section>
     </footer>
-    <!--script type="text/javascript" src="assets/js/app.js"></script-->
+    <script type="text/javascript" src="assets/js/simpleParallax.min.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>

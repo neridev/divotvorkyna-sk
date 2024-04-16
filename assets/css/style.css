@@ -199,9 +199,16 @@ header {
 }
 .header__top {
   margin-top: 2rem;
-  height: 20rem;
+  height: 10rem;
   align-items: center;
   justify-content: space-around;
+  overflow: hidden;
+}
+@media screen and (min-width: 520px) {
+  .header__top {
+    height: 20rem;
+    overflow: visible;
+  }
 }
 .header__bottom {
   height: 4rem;
@@ -216,10 +223,15 @@ header {
 .header__image img {
   position: relative;
   max-width: 22rem;
-  min-width: 8rem;
+  min-width: 5rem;
   border-radius: 50%;
   box-shadow: #000 0 0 20px 8px;
   z-index: 1;
+}
+@media screen and (min-width: 520px) {
+  .header__image img {
+    min-width: 8rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   .header__image img {
@@ -251,7 +263,6 @@ nav button:hover, nav button:focus {
 }
 
 ul {
-  display: none;
   flex-direction: column;
 }
 @media screen and (min-width: 610px) {
