@@ -19,9 +19,26 @@ body {
     width: 90%;
     margin: 0 auto;
     padding: 2rem 0;
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem 0 0;
+    }
     
     @media screen and (min-width: 768px) {
         width: 85%;
+
+        .col {
+            flex: 1;
+        }
     }
     
     @media screen and (min-width: 1024px) {
