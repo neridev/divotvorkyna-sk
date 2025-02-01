@@ -92,19 +92,34 @@ h1 {
   }
 }
 
-h2, h3 {
+h2 {
   font-size: 2rem;
   font-family: "Great Vibes";
   margin: 1rem 0;
 }
 @media screen and (min-width: 520px) {
-  h2, h3 {
+  h2 {
     font-size: 2.5rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  h2, h3 {
+  h2 {
     font-size: 3rem;
+  }
+}
+
+h3, h4, h5, h6 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+@media screen and (min-width: 520px) {
+  h3, h4, h5, h6 {
+    font-size: 1.65rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h3, h4, h5, h6 {
+    font-size: 1.85rem;
   }
 }
 
@@ -318,6 +333,35 @@ main .text p {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
   text-align: justify;
+}
+
+article.post {
+  padding: 1.5rem 0 2rem 0;
+  margin: 0 0 1rem 0;
+  border-bottom: 1px solid #f3bcbc;
+}
+article.post a {
+  color: #6a1313;
+}
+article.post a h3, article.post a span {
+  color: #6a1313;
+  transition: color 0.35s ease-in-out;
+}
+article.post a span {
+  font-size: 1.2rem;
+}
+article.post a:hover h3, article.post a:hover span {
+  color: #360909;
+  transition: color 0.35s ease-in-out;
+}
+article.post p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+article.post:last-of-type {
+  border-bottom: none;
 }
 
 /*# sourceMappingURL=style.css.map */
