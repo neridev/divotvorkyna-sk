@@ -334,6 +334,14 @@ main .text p {
   margin-bottom: 1.5rem;
   text-align: justify;
 }
+main .text p a {
+  color: #6a1313;
+  transition: color 0.35s ease-in-out;
+}
+main .text p a:hover {
+  color: #360909;
+  transition: color 0.35s ease-in-out;
+}
 
 article.post {
   padding: 1.5rem 0 2rem 0;
