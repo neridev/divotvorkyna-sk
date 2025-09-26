@@ -12,4 +12,21 @@ footer {
         margin-bottom: 1.5rem;
         text-align: justify;
     }
+
+    .social-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        a {
+            display: flex;
+            width: 2rem;
+            height: 2rem;
+        }
+
+        svg {
+            max-width: 2rem;
+            fill: $white;
+        }
+    }
 }

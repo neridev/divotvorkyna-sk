@@ -23,7 +23,7 @@ nav {
     }
 }
 
-ul {
+ul#nav__list {
     flex-direction: column;
     
     @media screen and (min-width: 610px) {

@@ -114,12 +114,12 @@ h3, h4, h5, h6 {
 }
 @media screen and (min-width: 520px) {
   h3, h4, h5, h6 {
-    font-size: 1.65rem;
+    font-size: 1.55rem;
   }
 }
 @media screen and (min-width: 1024px) {
   h3, h4, h5, h6 {
-    font-size: 1.85rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -170,7 +170,7 @@ body {
 .container .col {
   display: flex;
   flex-direction: column;
-  margin: 0 1rem 0 0;
+  margin: 0 2rem 0 0;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -290,16 +290,16 @@ nav button:hover, nav button:focus {
   }
 }
 
-ul {
+ul#nav__list {
   flex-direction: column;
 }
 @media screen and (min-width: 610px) {
-  ul {
+  ul#nav__list {
     display: flex;
     flex-direction: row;
   }
 }
-ul li a {
+ul#nav__list li a {
   height: 4rem;
   padding: 0 1.35rem;
   display: flex;
@@ -309,7 +309,7 @@ ul li a {
   background-color: #360909;
   transition: all 0.35s ease-in-out;
 }
-ul li a:hover, ul li a:focus {
+ul#nav__list li a:hover, ul#nav__list li a:focus {
   background-color: #6a1313;
 }
 
@@ -327,6 +327,20 @@ footer p {
   margin-bottom: 1.5rem;
   text-align: justify;
 }
+footer .social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .social-links a {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+}
+footer .social-links svg {
+  max-width: 2rem;
+  fill: #fff;
+}
 
 main .text p {
   line-height: 1.5;
@@ -337,10 +351,24 @@ main .text p {
 main .text p a {
   color: #6a1313;
   transition: color 0.35s ease-in-out;
+  font-weight: bold;
 }
 main .text p a:hover {
   color: #360909;
   transition: color 0.35s ease-in-out;
+}
+main .text strong {
+  font-weight: bold;
+}
+main .text ul {
+  margin-bottom: 1.5rem;
+}
+main .text ul li {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  margin-left: 2.5rem;
+  list-style: disc;
 }
 
 article.post {
